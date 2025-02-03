@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+}
+.certificates{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+.certificates:hover{
+    transform: scale(1.1);
+    animation: shake 0.5s;
+    transition: transform 0.1s;
+    box-shadow: 0 0 35px rgba(155, 220, 208, 0.916); 
+}
+
+@keyframes shake {
+    0% { transform: scale(1.025) translateX(0); }
+    25% { transform: scale(1.05) translateX(-5px); }
+    50% { transform: scale(1.075) translateX(5px); }
+    75% { transform: scale(1.090) translateX(-5px); }
+    100% { transform: scale(1.1) translateX(0); }
+}
+
+.postmanBox{
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.5s, background-color 0.5s, box-shodow 0.5s;
+}
+
+.postmanBox:hover{
+    animation: spin 0.1s linear 2;
+    background-color: rgba(255, 182, 193, 0.5); 
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
