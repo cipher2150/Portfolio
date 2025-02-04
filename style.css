@@ -1,6 +1,3 @@
-a {
-    text-decoration: none;
-}
 .certificates{
     height: 250px;
     width: 250px;
@@ -28,7 +25,7 @@ a {
 }
 
 .postmanBox:hover{
-    animation: spin 0.1s linear 2;
+    animation: spin 0.1s linear 10;
     background-color: rgba(255, 182, 193, 0.5); 
     box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
 }
@@ -38,63 +35,3 @@ a {
     100% { transform: rotate(360deg); }
 }
 
-.academicCont{
-    text-align: center  ;
-}
-.academicTable {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: left;
-}
-.academicTable th, .academicTable td {
-    padding: 12px;
-    border: 1px solid #ddd;
-}
-.academicTable th {
-    background-color: #f2f2f2;
-}
-.academicTable tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-.academicTable tr:hover {
-    background-color: #f1f1f1;
-}
-.hobbySection {
-    background-color: #f0f8ff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-.hobbySection:nth-child(odd) {
-    background-color: #e6e6fa;
-}
-.hobbySection:nth-child(even) {
-    background-color: #fffacd;
-}
-
-.geo{
-    background-color: #f0f8ff;
-    padding: 15px; 
-    margin-bottom: 10px; 
-    border-radius: 5px;
-}
-.fort{
-    background-color: #f5f5dc;
-    padding: 15px; 
-    margin-bottom: 10px; 
-    border-radius: 5px;
-}
-.read{
-    background-color: #e6e6fa;
-    padding: 15px; 
-    margin-bottom: 10px; 
-    border-radius: 5px;
-}
-
-.quiet{
-    background-color: #fffacd;
-    padding: 15px; 
-    margin-bottom: 10px; 
-    border-radius: 5px;
-}
