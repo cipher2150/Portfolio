@@ -17,23 +17,30 @@
         </nav><br>
         <h1><strong>Contact Me</strong></h1>
 
-        <form>
-            <strong>
-                <label for="email">Email: </label>
+        
+        
+        <div class="form-container">
+            <form>
+                <label for="email">Email:</label>
                 <input placeholder="Your e-mail" type="email" id="email" name="email" required>
-                <br><br>
-                <label for="message">Message: </label><br>
-                <textarea placeholder="Type your message"></textarea>
-                <br><br>
-                <label>Subscribe: </label>
-                <input type="radio" id="yes" name="subscribe" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="subscribe" value="no">
-                <label for="no">No</label>
-                <br><br>
+    
+                <label for="message">Message:</label>
+                <textarea placeholder="Type your message" id="message" name="message" rows="5" required></textarea>
+    
+                <label>Subscribe:</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="subscribe" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="subscribe" value="no">
+                    <label for="no">No</label>
+                </div>
+    
                 <input type="submit" value="Send">
-            </strong>
-        </form>
+            </form>
+        </div>
+       
+       
+       
         <br><br>
         <a 
             href="https://linkedin.com/in/rajshekhar2150" 
