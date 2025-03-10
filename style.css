@@ -1,170 +1,176 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+.image-container{
+    display: flex;
+    justify-content: center;
+    min-width: 40%;
+    max-width: 48%;
+    padding: 5px;
+}
+.profile-image{
+    width: 95%;
+    border-radius: 15px;
+    box-shadow: 9px 9px 9px #888888;
+}
+.text-container{
+    padding: 15px;
+    text-align: justify;
+}
+
+.description{
+    font-size: 18px;
     color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.name{
+    font-size: 25px;
+    font-weight: 500;
 }
 
-nav a {
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.knowme{
+    padding: 10px;
 }
-nav a:hover {
-    background-color: #e6e6fa;
+.greeting{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(157, 0, 255, 0.869);
+    text-align: end;
+}
+.detail-description{
+    font-size: 18px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
+.academicTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
 }
-.content {
+.academicTable th, .academicTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+.academicTable th {
+    background-color: #f2f2f2;
+}
+.academicTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.academicTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background: #cdd8ee;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(63, 72, 80, 0.2);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ffcc29;
+}
+.hobbies {
     display: flex;
     flex-direction: column;
-    background-image: url(flower.jpg);
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+.hobby {
+    background-image: url(la.jpg);
     background-size: cover;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    width: 80%;
-    text-align: left;
-    color: white;
+    color: rgb(3, 25, 49);
 }
-.header{
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20px auto;
-    text-align: left;
+.hobby h2 {
+    margin-top: 0;
+    color: #0b444f;
 }
-
-.name{
-    width: 100%;
-}
-
-.details {
-    text-align: left;
-}
-
-.details p {
+.hobby p {
+    margin: 10px 0 0;
     font-size: 1.1em;
-    line-height: 1.6;
 }
-
-.programming-languages {
-    background-color: #f8f8f8;
+.gallery-container {
+    max-width: 1200px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    list-style-type: none;
-    font-family: 'Georgia', serif;
-    color: #333;
-    max-width: 600px;
-    margin: 20px auto;
+    text-align: center;
+}
+ 
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-.programming-languages li {
-    margin: 10px 0;
+.gallery-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-card img {
+    width: 90%;
+    height: 70%;
+    padding-top: 20px;
+    border-radius: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.card-info {
     padding: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.programming-languages li:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-5px);
+.card-info h2 {
+    margin: 10px 0;
+    font-size: 1.6em;
+    color: #0077b6;
 }
 
-.certificates{
-    height: 250px;
-    width: 250px;
-    margin: 10px;
+.card-info p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
 }
-.certificates:hover{
-    transform: scale(1.1);
-    animation: shake 0.5s;
-    transition: transform 0.1s;
-    box-shadow: 0 0 35px rgba(155, 220, 208, 0.916); 
-}
-
-@keyframes shake {
-    0% { transform: scale(1.025) translateX(0); }
-    25% { transform: scale(1.05) translateX(-5px); }
-    50% { transform: scale(1.075) translateX(5px); }
-    75% { transform: scale(1.090) translateX(-5px); }
-    100% { transform: scale(1.1) translateX(0); }
+.card {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
 }
 
-.postmanBox{
-    padding: 10px;
-    border-radius: 50%;
-    transition: transform 0.5s, background-color 0.5s, box-shodow 0.5s;
+button:hover {
+    background-color: #0056b3;
 }
 
-.postmanBox:hover{
-    animation: spin 0.1s linear 10;
-    background-color: rgba(255, 182, 193, 0.5); 
-    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.form-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    width: 50%;
-    text-align: left;
-}
-.form-container label {
-    font-weight: bold;
-    display: block;
-    margin-top: 15px;
-}
-.form-container input, .form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-}
-.form-container .radio-group {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-.form-container .radio-group input[type="radio"] {
-    width: auto;
-    margin-right: 5px;
-}
-.form-container .radio-group label {
-    margin-right: 20px;
-}
-.form-container input[type="submit"] {
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-.form-container input[type="submit"]:hover {
-    background-color: #1a252f;
+#status {
+    font-size: 1.1em;
+    color: green;
 }
