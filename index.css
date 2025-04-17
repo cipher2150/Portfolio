@@ -1,0 +1,71 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f5f1e6;
+    color: #2d2a26;
+    line-height: 1.8;
+    background: url('https://www.transparenttextures.com/patterns/old-mathematics.png'); /* optional texture */
+    background-color: #fdf6e3;
+    border: 2px solid #d8c7a3;
+
+  }
+  
+  .navbar {
+    background-color: #efe8dc;
+    border-bottom: 2px solid #c2b9a9;
+    font-size: 1.1rem;
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #3e362f;
+  }
+  
+  .nav-link {
+    color: #5a4e42 !important;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #8b6f47 !important;
+  }
+  
+  .hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .profile-image {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 4px solid #cdbfa3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #3e362f;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #4a4033;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-image {
+      margin-bottom: 20px;
+    }
+  }
+  
